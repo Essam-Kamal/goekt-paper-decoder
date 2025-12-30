@@ -116,7 +116,7 @@ except Exception as e:
 # --- 5. دالة الترجمة ---
 def goekt_translate(text, level="academic"):
     """ترجمة النصوص العلمية بمستويين"""
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('models/gemini-1.5-flash-latest')
 
     prompts = {
         "simple": """
